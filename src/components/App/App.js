@@ -1,11 +1,16 @@
 /* import logo from './logo.svg'; */
 import { useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 import Circle from '../Circle';
 
 function App() {
   let [top, setTop] = useState(12);
   let [left, setLeft] = useState(1);
+
+  useEffect(() => {
+    console.log(top);
+  }, [top])
 
 
   function moveDown() {
