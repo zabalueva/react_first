@@ -1,6 +1,5 @@
-/* import logo from './logo.svg'; */
 import { useState, useEffect } from 'react';
-import './app.css';
+import './App.css';
 import Circle from '../Circle';
 
 function App() {
@@ -26,8 +25,7 @@ function App() {
   return (
     <div className="App">
       <p>
-        <b>top
-          </b>
+
       </p>
       <Circle 
         color={'red'}
@@ -45,7 +43,6 @@ function App() {
         Двигать вправо
       </button>
 
-      Hello
     </div>
   );
 }

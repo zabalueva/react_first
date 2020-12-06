@@ -1,5 +1,4 @@
-/* import React from react; */
-import  style from './circle.module.css';
+import  './Circle.css';
 
 function Circle(props) {
     const { color, position } = props;
@@ -7,11 +6,11 @@ function Circle(props) {
         backgroundColor: color,
         ...position
     }
-    return <div
-        className="circle"
-        style={style}
-    >
 
-    </div>
+    return (
+        <div className="circle" style={style}>
+        
+        </div>
+    )
 }
 export default Circle;
