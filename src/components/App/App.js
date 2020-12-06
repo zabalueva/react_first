@@ -1,7 +1,7 @@
 /* import logo from './logo.svg'; */
 import { useState, useEffect } from 'react';
 import './app.css';
-import Circle from '../Circle/circle';
+import Circle from '../Circle';
 
 function App() {
   let [top, setTop] = useState(12);
