@@ -1,5 +1,5 @@
 /* import React from react; */
-/* import style from './circle.module.css'; */
+import  style from './circle.module.css';
 
 function Circle(props) {
     const { color, position } = props;
