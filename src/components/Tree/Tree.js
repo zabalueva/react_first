@@ -8,8 +8,7 @@ function Tree (props) {
     }
 
     return (
-        <div className="tree" style={style}>
-        Здесь должно быть дерево
+        <div className="Tree" style={style}>
         </div>
     )
 }

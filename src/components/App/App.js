@@ -16,12 +16,10 @@ function App() {
 
   function moveDown() {
     setTop(top + 10);
-    console.log(top);
   }
 
   function moveRight() {
     setLeft(left + 10);
-    console.log(top);
   }
 
 
