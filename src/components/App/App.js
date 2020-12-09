@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Circle from '../Circle';
 import Tree from '../Tree';
+/* import Coords from '../Coords/Coords'; */
 import tree from '../Tree/tree.svg';
 /* import treeC from '../../../public/img/treeCopy.svg'; */
 
@@ -13,14 +14,22 @@ function App() {
     console.log(top);
   }, [top])
 
+  
 
   function moveDown() {
-    setTop(top + 10);
+    setTop(top + 50);
   }
 
   function moveRight() {
-    setLeft(left + 10);
+    setLeft(left + 50);
   }
+
+ /*  function Coord() {
+    let element = Circle.getBoundingClientRect();
+        const x = element.left;
+    const y = element.top;
+    console.log(x, y);
+  } */
 
 
   return (
