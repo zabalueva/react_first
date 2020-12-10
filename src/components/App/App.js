@@ -9,12 +9,12 @@ import tree from '../Tree/tree.svg';
 function App() {
   let [top, setTop] = useState(12);
   let [left, setLeft] = useState(1);
+  let [coordx, setX] = useState('');
+  let [coordy, setY] = useState('');
 
   useEffect(() => {
     console.log(top);
   }, [top])
-
-  
 
   function moveDown() {
     setTop(top + 50);
@@ -22,6 +22,17 @@ function App() {
 
   function moveRight() {
     setLeft(left + 50);
+  }
+
+  function Coords(c) {
+    let element = c.target.getBoundingClientRect();
+    setX(() => {
+      coordx = element.left;
+    })
+    setY(() => {
+      coordy = element.top;
+      console.log(coordx, coordy);
+    })
   }
 
  /*  function Coord() {
@@ -54,6 +65,10 @@ function App() {
 
       <button onClick={moveRight}>
         Двигать вправо
+      </button>
+
+      <button onClick={Coords}>
+        Координаты
       </button>
 
     </div>
