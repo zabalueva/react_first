@@ -1,0 +1,9 @@
+.Gift1{
+    width: 50%;
+    grid-column: 3/2;
+    position: relative;
+    z-index: 1;
+}
+.Gift1:hover {
+    cursor: pointer;
+}

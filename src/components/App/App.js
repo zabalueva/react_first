@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Circle from '../Circle';
 import Tree from '../Tree';
-/* import Coords from '../Coords/Coords'; */
+import AwaitGit from '../AwaitGit/AwaitGit';
+import '../Gifts/Gift.css';
 import tree from '../Tree/tree.svg';
 /* import treeC from '../../../public/img/treeCopy.svg'; */
 
@@ -35,18 +36,10 @@ function App() {
     })
   }
 
- /*  function Coord() {
-    let element = Circle.getBoundingClientRect();
-        const x = element.left;
-    const y = element.top;
-    console.log(x, y);
-  } */
-
-
   return (
     <div className="App">
-      <p>
-      </p>
+      <div className="wrap">
+
       <Circle 
         color={'red'}
         position={{ top: top, left: left }}
@@ -58,7 +51,10 @@ function App() {
       <Tree 
         image={'url('+tree+')'}
         color={'green'}
-      />
+        />
+      <AwaitGit
+        />
+</div>
       <button onClick={moveDown}>
         Двигать вниз
       </button>

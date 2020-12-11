@@ -1,6 +1,7 @@
 .Tree {
-    height: 500px;
-    background-position: center;
-    background-size: 15%;
-    background-repeat: no-repeat;
+    height: 15em;
+    position: relative;
+    z-index: -1;
+    grid-column: 3;
+    justify-self: center;
 }
