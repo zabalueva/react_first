@@ -1,23 +1,25 @@
 import React from 'react';
+import Circle from '../Circle';
 
-function Coords(el) {
-    /* let Coord = onClick = (e) => { */
-        const element = el.target.getBoundingClientRect();
-        const x = element.left;
-        const y = element.top;
-        console.log(x, y);
-
-        return (
-            <div>
-                DIV1
-
-                <div onClick={Coords}>
-                    DIV2
-                </div>
-            </div>
-        );
-    
+function Coords(props) {
+    const { color, top, left } = props;
+    const style = {
+        backgroundColor: color,
+        top, left
     }
+
+    let x = left.pageX;
+    let y = top.pageY;
+    console.log(x, y);
+
+    return (
+        <div className="circle" style={style} >
+        </div>
+        
+    )
+}
+
+
 
 
 export default Coords;

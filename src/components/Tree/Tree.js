@@ -1,16 +1,14 @@
 import './Tree.css';
 import tree from '../Tree/tree.svg';
+import Circle from '../Circle';
+import Coords from '../Coords/Coords';
 
 function Tree (props) {
-    /* const { image, color } = props;
-    const style = {
-        backgroundImage: image,
-        color: color
-    } */
+
 
     return (
-        <div className="Tree" /* style={style} */>
-            <img src = {tree} alt = "tree" className = "Tree"></img>
+        <div className="Tree">
+            <img src = {tree} alt = "tree" className="XMasTree" onClick={Coords}></img>
         </div>
     )
 }

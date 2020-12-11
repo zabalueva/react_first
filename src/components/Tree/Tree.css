@@ -1,7 +1,16 @@
 .Tree {
     height: 15em;
     position: relative;
-    z-index: -1;
     grid-column: 3;
     justify-self: center;
+}
+
+.XMasTree {
+    height: 15em;
+    position: relative;
+
+}
+
+.XMasTree:hover {
+    cursor: pointer;
 }

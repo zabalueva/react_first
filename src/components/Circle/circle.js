@@ -8,9 +8,9 @@ function Circle(props) {
     }
 
     return (
-        <div className="circle" style={style}>
-        
+        <div className="circle" style={style} >       
         </div>
+        
     )
 }
 export default Circle;
