@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react_first/static/css/main.1c610071.chunk.css",
+    "main.js": "/react_first/static/js/main.a21f5733.chunk.js",
+    "main.js.map": "/react_first/static/js/main.a21f5733.chunk.js.map",
+    "runtime-main.js": "/react_first/static/js/runtime-main.717d9904.js",
+    "runtime-main.js.map": "/react_first/static/js/runtime-main.717d9904.js.map",
+    "static/js/2.a60a318a.chunk.js": "/react_first/static/js/2.a60a318a.chunk.js",
+    "static/js/2.a60a318a.chunk.js.map": "/react_first/static/js/2.a60a318a.chunk.js.map",
+    "static/js/3.73e80bc4.chunk.js": "/react_first/static/js/3.73e80bc4.chunk.js",
+    "static/js/3.73e80bc4.chunk.js.map": "/react_first/static/js/3.73e80bc4.chunk.js.map",
+    "index.html": "/react_first/index.html",
+    "static/css/main.1c610071.chunk.css.map": "/react_first/static/css/main.1c610071.chunk.css.map",
+    "static/js/2.a60a318a.chunk.js.LICENSE.txt": "/react_first/static/js/2.a60a318a.chunk.js.LICENSE.txt",
+    "static/media/Gift1.4de2d7fc.svg": "/react_first/static/media/Gift1.4de2d7fc.svg",
+    "static/media/tree.ab871074.svg": "/react_first/static/media/tree.ab871074.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.717d9904.js",
+    "static/js/2.a60a318a.chunk.js",
+    "static/css/main.1c610071.chunk.css",
+    "static/js/main.a21f5733.chunk.js"
+  ]
+}
