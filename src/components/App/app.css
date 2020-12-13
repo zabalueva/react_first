@@ -2,3 +2,20 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+
+.Tree {
+    /* height: 15em; */
+    position: relative;
+    grid-column: 3;
+    justify-self: center;
+    
+}
+
+.XMasTree {
+    height: 80vh;
+    position: relative;
+}
+
+.XMasTree:hover {
+    cursor: pointer;
+}
