@@ -3,7 +3,7 @@ import './App.css';
 import '../Gifts/Gift.css';
 
 import Circle from '../Circle';
-
+import GiftGitInfo from '../GiftGitInfo/GiftGitInfo';
 import tree from '../Tree/tree.svg';
 
 function App() {
@@ -11,17 +11,27 @@ function App() {
 /*   let [left, setLeft] = useState(1); */
   let [coordX, setX] = useState('');
   let [coordY, setY] = useState('');
+  let [circle, setCircle] = useState('');
 
-  useEffect(() => {
-    console.log(top);
-  }, [top])
-
-  function moveBall(event) {
-    setX(event.pageX);
-    setY(event.pageY);
+  function moveBall(e) {
+    setX(e.pageX);
+    setY(e.pageY);
+    console.log(coordX);
   }
 
- /*  function moveDown() {
+  /* const ball = (<Circle color={'green'}
+    position={{ top: 10, left: 100 }} />);
+  
+  function moveCircle() {
+    setCircle(<Circle/>);
+  } */
+
+  function addCircle() {
+    console.log('q');
+    return circle;
+  }
+
+  /* function moveDown() {
     setTop(top + 50);
   } */
 
@@ -32,19 +42,18 @@ function App() {
           color={'red'}
           position={{ top: coordY, left: coordX }}
         />
-       {/*  <Circle
-          color={'blue'}
-          position={{ top: top + 50, left: left + 45 }}
-        /> */}
-  
+  <p className='description'>Вы можете нарядить ёлку, просто кликнув по ней!</p>
         <div className="Tree">
+          
           <img src = {tree} alt = "XMastree" className="XMasTree" onClick={moveBall}></img>
         </div>
       </div>
-      {/* <button onClick={moveDown}>
-        Двигать вниз
-      </button> */}
-
+      <button onClick={addCircle}>
+        Новый шарик
+      </button>
+      <button /* onClick={GiftGitInfo} */>
+        Получить подарок
+      </button>
     </div>
   );
 }
