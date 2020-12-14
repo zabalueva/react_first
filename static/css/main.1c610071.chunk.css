@@ -1,2 +1,0 @@
-.wrap{display:grid;grid-template-columns:repeat(5,1fr)}.Tree{grid-column:3;justify-self:center}.Tree,.XMasTree{position:relative}.XMasTree{height:80vh}.XMasTree:hover{cursor:pointer}.description{grid-column:2/6;font-family:Georgia,"Times New Roman",Times,serif;font-weight:600}.Gift1{width:50%;grid-column:3/2;position:relative;z-index:2}.Gift1:hover{cursor:pointer}.circle{width:10vh;height:10vh;border-radius:50%;position:absolute;z-index:1}
-/*# sourceMappingURL=main.1c610071.chunk.css.map */
