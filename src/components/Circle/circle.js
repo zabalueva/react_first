@@ -1,14 +1,15 @@
 import  './Circle.css';
 
 function Circle(props) {
-    const { color, position } = props;
+    let { color, position } = props;
     const style = {
         backgroundColor: color,
         ...position
     }
+    
 
     return (
-        <div className="circle" style={style} >       
+        <div className="circle" style={style}>       
         </div>
         
     )
