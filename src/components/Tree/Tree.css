@@ -2,13 +2,13 @@
     height: 15em;
     position: relative;
     grid-column: 3;
+    grid-row: 2;
     justify-self: center;
 }
 
 .XMasTree {
     height: 15em;
     position: relative;
-
 }
 
 .XMasTree:hover {

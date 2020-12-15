@@ -5,60 +5,64 @@ import '../Gifts/Gift.css';
 import Circle from '../Circle';
 import GiftGitInfo from '../GiftGitInfo/GiftGitInfo';
 import tree from '../Tree/tree.svg';
+/* import Gift2 from '../Gifts/Gift2.svg'; */
 
 function App() {
-  let [id, setId] = useState('');
-  const [coordX, setX] = useState('');
-  const [coordY, setY] = useState('');
   const [circles, setCircles] = useState([]);
+  const [coordX, setX] = useState('10');
+  const [coordY, setY] = useState('10');
+  const [gifts, setGifts] = useState([]);
 
-  function boxCircle() {
-    setCircles([{ coordX, coordY, id }]);
-  }
-
-  function addCircle() {
-    setId((circles.length));
-    circles.push({ coordX, coordY, id });
-    console.log(circles.length);
-    console.log(id)
-  }
-
-  function moveBall(e) {
+  function addCircle(e) {
+    setCircles([...circles, { coordX: coordX, coordY: coordY, id: circles.length }]);
     setX(e.pageX);
     setY(e.pageY);
+
+    if (circles.length === 1) {
+      alert(`Ёлка наряжена, теперь вперёд за подарками!`);
+      addGifts();
+    }
     console.log(coordX);
+    console.log(coordY);
+    console.log(circles.length);
   }
+
+  function addGifts() {
+    setGifts([...gifts, { id: gifts.length }]);
+    console.log(gifts.length);
+  }
+
 
   return (
     <div className="App">
       <div className="wrap">
         <p className='description'>Вы можете нарядить ёлку, просто кликнув по ней!</p>
 
-        <button onClick={boxCircle}>
-          Набрать корзину шариков
-        </button>
+        <p className='GiftsAll'>
+          {gifts.map(() => {
+            return <GiftGitInfo
+              key={gifts.length}
+            />
+          })}
+        </p>
 
         <div className="Tree">
-          <img src={tree} alt="XMastree" className="XMasTree" onClick={moveBall}></img>
+          <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
         </div>
-
+    
       </div>
-      <button onClick={addCircle}>
-        Новый шарик
-      </button>
 
       <div>{
         circles.map(({ coordX, coordY, id }) => {
           return <Circle
             key={id}
-            color={'red'}
+            color={'blue'}
             position={{ top: coordY, left: coordX }}
           />
         })
       }</div>
-      {/*  <button onClick={GiftGitInfo}>
-        Получить подарок
-      </button> */}
+
+
     </div>
   );
 }

@@ -1,0 +1,29 @@
+.Gifts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 45vh);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.Gift{
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    display: inline;
+    justify-self: end;
+    align-self: end;
+
+ 
+}
+.Gift:hover {
+    cursor: pointer;
+}
+
+
+
+.avatar {
+    clip-path: circle();
+    width: 25vh;
+}
