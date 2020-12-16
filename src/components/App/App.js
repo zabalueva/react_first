@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './App.css';
 import Circle from '../Circle';
-import GiftGitInfo from '../GiftGitInfo/GiftGitInfo';
+import GiftGitInfo from '../GiftGitInfo';
 import tree from '../Tree/tree.svg';
+import GiftVKInfo from '../GiftVKInfo';
 
 
 function App() {
@@ -19,15 +20,13 @@ function App() {
     if (circles.length === 1) {
       alert(`Ёлка наряжена, теперь вперёд за подарками!`);
       addGifts();
-    }
-    
+    }   
   }
 
   function addGifts() {
     setGifts([...gifts, { id: gifts.length }]);
     console.log(gifts.length);
   }
-
 
   return (
     <div className="App">
@@ -36,7 +35,7 @@ function App() {
         
         <div className='GiftsAll'>{
           gifts.map(() => {
-            return <GiftGitInfo
+            return <GiftVKInfo
               key={gifts.length}
             />
           })
