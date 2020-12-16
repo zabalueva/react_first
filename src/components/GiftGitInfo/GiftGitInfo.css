@@ -1,7 +1,7 @@
 .Gifts{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 45vh);
+    grid-template-columns: repeat(3, 345px);
     position: absolute;
     bottom: 0;
 }
@@ -14,13 +14,14 @@
     display: inline;
     justify-self: end;
     align-self: end;
-
- 
 }
 .Gift:hover {
     cursor: pointer;
 }
 
+/* .GiftGitDescr{
+    bottom: 0;
+} */
 
 
 .avatar {

@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-import '../Gifts/Gift.css';
-
 import Circle from '../Circle';
 import GiftGitInfo from '../GiftGitInfo/GiftGitInfo';
 import tree from '../Tree/tree.svg';
-/* import Gift2 from '../Gifts/Gift2.svg'; */
+
 
 function App() {
   const [circles, setCircles] = useState([]);
@@ -22,9 +20,7 @@ function App() {
       alert(`Ёлка наряжена, теперь вперёд за подарками!`);
       addGifts();
     }
-    console.log(coordX);
-    console.log(coordY);
-    console.log(circles.length);
+    
   }
 
   function addGifts() {
@@ -37,19 +33,19 @@ function App() {
     <div className="App">
       <div className="wrap">
         <p className='description'>Вы можете нарядить ёлку, просто кликнув по ней!</p>
-
-        <p className='GiftsAll'>
-          {gifts.map(() => {
+        
+        <div className='GiftsAll'>{
+          gifts.map(() => {
             return <GiftGitInfo
               key={gifts.length}
             />
-          })}
-        </p>
+          })
+        }
+        </div>
 
         <div className="Tree">
           <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
-        </div>
-    
+        </div>    
       </div>
 
       <div>{

@@ -1,16 +1,14 @@
-import gift1 from '../Gifts/Gift1.svg';
+import GiftGitInfo from '../GiftGitInfo/GiftGitInfo';
 
-
-function Gifts(props) {
-    const { image } = props;
-    const style = {
-        backgroundImage: image,
-    }
+function GetCaptureGift1(props) {
+    let { name, days, avatar } = props;
 
     return (
-        <div className="Gifts" style={style}>
-            ddfjk
+        <div>
+            <p> Имя: {name} </p>
+            <p> Вы на github уже {days} дня! Это точно повод для праздника!</p>
+            <img src={avatar} alt={name} className='avatar'></img>
         </div>
     )
 }
-export default Gifts;
+export default GetCaptureGift1;
