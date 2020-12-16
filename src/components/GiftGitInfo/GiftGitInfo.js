@@ -27,17 +27,14 @@ function GiftGitInfo() {
             }))
     }
 
+
     return (
         <div className="wrapGifts">
 
-            <div className="Gifts">
-                <img src={Gift1} alt="gift" title="Подарок GitHub" className="Gift" onClick={giveData}></img>
-                <img src={Gift2} alt="gift" className="Gift" onClick={giveData}></img>
-                <img src={Gift3} alt="gift" className="Gift" onClick={giveData}></img>
-            </div>
+            {giveData}
 
             {name &&
-                <div className="GiftGitDescr">
+                <div className="GiftDescr">
                 <p> Имя: {name} </p>
                 <p> Вы на github уже {days} дня! Это точно повод для праздника!</p>
                 <img src={avatar} alt={name} className='avatar'></img>

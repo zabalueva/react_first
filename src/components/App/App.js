@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import './App.css';
-import Circle from '../Circle';
-import GiftGitInfo from '../GiftGitInfo';
 import tree from '../Tree/tree.svg';
+import Circle from '../Circle';
+import Gifts from '../Gifts';
+
+import GiftGitInfo from '../GiftGitInfo';
 import GiftVKInfo from '../GiftVKInfo';
 
 
@@ -17,10 +19,11 @@ function App() {
     setX(e.pageX);
     setY(e.pageY);
 
-    if (circles.length === 1) {
+    /* if (circles.length === 10) {
       alert(`Ёлка наряжена, теперь вперёд за подарками!`);
       addGifts();
-    }   
+    } */   
+    //arg.shift
   }
 
   function addGifts() {
@@ -33,20 +36,23 @@ function App() {
       <div className="wrap">
         <p className='description'>Вы можете нарядить ёлку, просто кликнув по ней!</p>
         
-        <div className='GiftsAll'>{
+       {/*  <div className='GiftsAll'>{
           gifts.map(() => {
             return <GiftVKInfo
               key={gifts.length}
             />
           })
         }
-        </div>
+        </div> */}
 
         <div className="Tree">
           <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
         </div>    
       </div>
-
+      
+      {(circles.length >= 10) &&
+        <Gifts /> 
+      }
       <div>{
         circles.map(({ coordX, coordY, id }) => {
           return <Circle
