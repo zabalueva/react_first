@@ -1,27 +1,27 @@
 .Gifts{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 345px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     position: absolute;
     bottom: 0;
 }
 
-
 .Gift{
-    width: 50%;
+    width: 10%;
     position: relative;
     z-index: 2;
     display: inline;
-    justify-self: end;
     align-self: end;
 }
 .Gift:hover {
     cursor: pointer;
 }
 
-/* .GiftGitDescr{
-    bottom: 0;
-} */
+.GiftGitDescr{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
 
 
 .avatar {
