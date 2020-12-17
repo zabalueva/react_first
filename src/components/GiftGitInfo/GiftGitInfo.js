@@ -1,17 +1,14 @@
 import { useState } from 'react';
-import Gift1 from '../Gifts/Gift1.svg';
-import Gift2 from '../Gifts/Gift2.svg';
-import Gift3 from '../Gifts/Gift3.svg';
 import './GiftGitInfo.css';
 
 function GiftGitInfo() {
     const [name, setName] = useState(false);
     const [avatar, setAvatar] = useState('');
     const [days, setDays] = useState('');
-    const [login, setLogin] = useState(false);
+    /* const [login, setLogin] = useState(false); */
 
     function giveData() {
-        setLogin()
+        /* setLogin() */
         let user = prompt('Введите ваш логин на github', "username");
         fetch(`https://api.github.com/users/${user}`)
             .then(response => response.json())
@@ -25,13 +22,14 @@ function GiftGitInfo() {
                 const calc = ((currentDate - formatDate) / 1000 / 60 / 60 / 24);
                 setDays(calc.toFixed(0));
             }))
+        console.log(name)
     }
 
 
     return (
-        <div className="wrapGifts">
-
-            {giveData}
+        <div className="GiftDescr">
+            
+           <button className="GiftDescr" onClick= {giveData}>Получить подарок </button>
 
             {name &&
                 <div className="GiftDescr">

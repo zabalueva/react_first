@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import Gift1 from '../Gifts/Gift1.svg';
 import Gift2 from '../Gifts/Gift2.svg';
 import Gift3 from '../Gifts/Gift3.svg';
-import './GiftVKInfo.css';
+import './GiftFoodInfo.css';
 
-function GiftVKInfo() {
+function GiftFoodInfo() {
     const [meal, setMeal] = useState(false);
     const [imgMeal, setImgMeal] = useState('');
 
@@ -41,4 +41,4 @@ function GiftVKInfo() {
     );
 }
 
-export default GiftVKInfo;
+export default GiftFoodInfo;
