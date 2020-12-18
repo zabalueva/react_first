@@ -44,7 +44,7 @@ function App() {
       
       }</div>
 
-      {(circles.length >= 2) &&
+      {(circles.length >= 10) &&
         <Gifts /> 
       }
 
