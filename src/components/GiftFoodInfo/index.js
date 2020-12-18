@@ -1,3 +1,3 @@
-import GiftVKInfo from './GiftFoodInfo';
+import GiftFoodInfo from './GiftFoodInfo';
 
-export default GiftVKInfo;
+export default GiftFoodInfo;

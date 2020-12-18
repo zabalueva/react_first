@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import './App.css';
 
-import tree from '../Tree/tree.svg';
+import tree from './tree.svg';
 import Circle from '../Circle';
 import Gifts from '../Gifts';
 
