@@ -29,15 +29,15 @@ function Gifts() {
 
             <div className="Gifts">
                 <img src={Gift1} alt="gift" title="Подарок GitHub" className="Gift" onClick={getFirstGift}></img>
-                <img src={Gift2} alt="gift" className="Gift" onClick={getSecondGift}></img>
-                <img src={Gift3} alt="gift" className="Gift" onClick={getSecondGift}></img>
+                <img src={Gift2} alt="gift" title="Подарок Food" className="Gift" onClick={getSecondGift}></img>
+                <img src={Gift3} alt="gift" title="Подарок Animation" className="Gift" onClick={getSecondGift}></img>
             </div>
             <div>
                 {firstGift &&
                     <GiftGitInfo />
                 }
                 {secondGift &&
-                    <GiftFoodInfo giveData/>
+                    <GiftFoodInfo />
                 }</div>
             {/* {name &&
                     <div className="GiftDescr">
