@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 import tree from '../Tree/tree.svg';
@@ -7,15 +7,21 @@ import Gifts from '../Gifts';
 
 
 function App() {
+  const [coordX, setX] = useState('');
+  const [coordY, setY] = useState('');
   const [circles, setCircles] = useState([]);
-  const [coordX, setX] = useState('10');
-  const [coordY, setY] = useState('10');
+  
+ 
 
   function addCircle(e) {
-    setCircles([...circles, { coordX: coordX, coordY: coordY, id: circles.length }]);
     setX(e.pageX);
     setY(e.pageY);
-  }
+    setCircles([...circles, { coordX: coordX, coordY: coordY, id: circles.length }]);
+    console.log(circles.length);
+    }
+    
+    
+  
 
   return (
     <div className="App">
@@ -35,6 +41,7 @@ function App() {
             position={{ top: coordY, left: coordX }}
           />
         })
+      
       }</div>
 
       {(circles.length >= 2) &&

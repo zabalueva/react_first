@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './GiftGitInfo.css';
 
 function GiftGitInfo() {
@@ -25,6 +25,9 @@ function GiftGitInfo() {
         console.log(name)
     }
 
+    useEffect(() => {
+        document.title = `A time of gifts!`
+    }, [days])
 
     return (
         <div className="GiftDescr">

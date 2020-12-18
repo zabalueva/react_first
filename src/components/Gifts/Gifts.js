@@ -37,7 +37,7 @@ function Gifts() {
                     <GiftGitInfo />
                 }
                 {secondGift &&
-                    <GiftFoodInfo />
+                    <GiftFoodInfo giveData/>
                 }</div>
             {/* {name &&
                     <div className="GiftDescr">
