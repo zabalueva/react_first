@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
+
 import GiftFoodInfo from '../GiftFoodInfo';
 import GiftGitInfo from '../GiftGitInfo';
 import Gift1 from '../Gifts/Gift1.svg';
@@ -15,7 +18,7 @@ function Gifts() {
     /* const [thirdGift, setThirdGift] = useState(false); */
 
     function getFirstGift() {
-        setFirstGift(true);  
+        setFirstGift(true);
     }
     function getSecondGift() {
         setSecondGift(true);
@@ -24,14 +27,17 @@ function Gifts() {
         return <GiftVKInfo/>       
     } */
 
+    const Bounce = styled.div`animation: 6s ${keyframes`${bounce}`} infinite`;
+
     return (
         <div className="wrapGifts">
-
-            <div className="Gifts">
-                <img src={Gift1} alt="gift" title="Подарок GitHub" className="Gift" onClick={getFirstGift}></img>
-                <img src={Gift2} alt="gift" title="Подарок Food" className="Gift" onClick={getSecondGift}></img>
-                <img src={Gift3} alt="gift" title="Подарок Animation" className="Gift" onClick={getSecondGift}></img>
-            </div>
+            <Bounce>
+                <div className="Gifts">
+                    <img src={Gift1} alt="gift" title="Подарок GitHub" className="Gift" onClick={getFirstGift}></img>
+                    <img src={Gift2} alt="gift" title="Подарок Food" className="Gift" onClick={getSecondGift}></img>
+                    <img src={Gift3} alt="gift" title="Подарок Animation" className="Gift" onClick={getSecondGift}></img>
+                </div>
+            </Bounce>
             <div>
                 {firstGift &&
                     <GiftGitInfo />
@@ -39,13 +45,6 @@ function Gifts() {
                 {secondGift &&
                     <GiftFoodInfo />
                 }</div>
-            {/* {name &&
-                    <div className="GiftDescr">
-                    <p> Имя: {name} </p>
-                    <p> Вы на github уже {days} дня! Это точно повод для праздника!</p>
-                    <img src={avatar} alt={name} className='avatar'></img>
-                    </div>
-                } */}
 
         </div>
     );
