@@ -1,18 +1,22 @@
+.wrapGifts {
+    display: grid;
+    grid-column: 2;
+    position: relative;
+    bottom: 110px;
+}
+
 .Gifts{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    bottom: -30px;
+    justify-content: center;   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
 .Gift{
-    width: 10%;
-    position: relative;
+    width: 30%;
     z-index: 2;
-    display: inline;
-    align-self: end;
 }
 
 .Gift:hover {
@@ -22,8 +26,4 @@
 .GiftDescr{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-}
-
-.wrapGifts {
-    display: block;
 }

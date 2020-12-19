@@ -22,7 +22,6 @@ function GiftGitInfo() {
                 const calc = ((currentDate - formatDate) / 1000 / 60 / 60 / 24);
                 setDays(calc.toFixed(0));
             }))
-        console.log(name)
     }
 
     useEffect(() => {
@@ -30,12 +29,11 @@ function GiftGitInfo() {
     }, [days])
 
     return (
-        <div className="GiftDescr">
-            
+        <div className="GiftDescr">     
+       {/*  <input value="login" type=""> </input> */}
            <button className="GiftDescr" onClick= {giveData}>Получить подарок </button>
-
             {name &&
-                <div className="GiftDescr">
+                <div>
                 <p> Имя: {name} </p>
                 <p> Вы на github уже {days} дня! Это точно повод для праздника!</p>
                 <img src={avatar} alt={name} className='avatar'></img>

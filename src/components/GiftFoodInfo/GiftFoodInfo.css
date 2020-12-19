@@ -4,5 +4,6 @@
 }
 
 .mealDescr {
-    
+    position: flex;
+    top: -800px;
 }

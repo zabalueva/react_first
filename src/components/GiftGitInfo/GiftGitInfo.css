@@ -1,8 +1,9 @@
-.GiftDescr{
-    height: 50vh;
-    grid-column: 2/6;
-}
 .avatar {
     clip-path: circle();
     width: 25vh;
+}
+
+.GDescr {
+    position: fixed;
+    top: 8px;
 }

@@ -31,6 +31,7 @@ function Gifts() {
 
     return (
         <div className="wrapGifts">
+
             <Bounce>
                 <div className="Gifts">
                     <img src={Gift1} alt="gift" title="Подарок GitHub" className="Gift" onClick={getFirstGift}></img>
@@ -38,17 +39,16 @@ function Gifts() {
                     <img src={Gift3} alt="gift" title="Подарок Animation" className="Gift" onClick={getThirdGift}></img>
                 </div>
             </Bounce>
-            <div>
-                {firstGift &&
-                    <GiftGitInfo />
-                }
-                {secondGift &&
-                    <GiftFoodInfo />
-                }</div>
-            <div>
-                {thirdGift &&
-                    <GiftFunInfo />
-                }</div>
+
+            {firstGift &&
+                <GiftGitInfo />
+            }
+            {secondGift &&
+                <GiftFoodInfo />
+            }
+            {thirdGift &&
+                <GiftFunInfo />
+            }
 
         </div>
     );
