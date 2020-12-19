@@ -9,7 +9,7 @@ import './Gifts.css';
 
 import GiftFoodInfo from '../GiftFoodInfo';
 import GiftGitInfo from '../GiftGitInfo';
-import GiftFunInfo from '../GiftFunInfo/GiftFunInfo';
+import GiftFunInfo from '../GiftFunInfo';
 
 
 function Gifts() {
