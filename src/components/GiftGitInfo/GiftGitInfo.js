@@ -2,15 +2,23 @@ import { useState, useEffect } from 'react';
 import './GiftGitInfo.css';
 
 function GiftGitInfo() {
+    const [login, setLogin] = useState('');
     const [name, setName] = useState(false);
     const [avatar, setAvatar] = useState('');
     const [days, setDays] = useState('');
-    /* const [login, setLogin] = useState(false); */
+    
+
+    function handleInput(e) {
+        setLogin(e.target.value);
+        console.log(login)
+    }
+
+    useEffect(() => {
+        document.title = `A time of gifts!`
+    }, [])
 
     function giveData() {
-        /* setLogin() */
-        let user = prompt('Введите ваш логин на github', "username");
-        fetch(`https://api.github.com/users/${user}`)
+        fetch(`https://api.github.com/users/${login}`)
             .then(response => response.json())
             .then(githubUserData => new Promise((resolve, reject) => {
 
@@ -24,19 +32,16 @@ function GiftGitInfo() {
             }))
     }
 
-    useEffect(() => {
-        document.title = `A time of gifts!`
-    }, [days])
-
     return (
-        <div className="GiftDescr">     
-       {/*  <input value="login" type=""> </input> */}
-           <button className="GiftDescr" onClick= {giveData}>Получить подарок </button>
+        <div className="GiftDescr">
+            <input value={login} onChange={handleInput} />
+            <button onClick={giveData}>Узнать повод для праздника!</button>
+
             {name &&
                 <div>
-                <p> Имя: {name} </p>
-                <p> Вы на github уже {days} дня! Это точно повод для праздника!</p>
-                <img src={avatar} alt={name} className='avatar'></img>
+                    <p> Имя: {name} </p>
+                    <p> Вы на github уже {days} дня! Это точно повод для праздника!</p>
+                    <img src={avatar} alt={name} className='avatar'></img>
                 </div>
             }
 

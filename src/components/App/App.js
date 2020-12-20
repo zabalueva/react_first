@@ -14,7 +14,11 @@ function App() {
   function addCircle(e) {
     setX(e.pageX);
     setY(e.pageY);
-    setCircles([...circles, { coordX: coordX, coordY: coordY, id: circles.length }]);
+    setCircles(
+      [...circles,
+        { coordX: coordX, coordY: coordY, id: circles.length }
+      ]
+    );
   }
 
 
@@ -27,7 +31,7 @@ function App() {
       <p className='description'>Ёлка засветится огоньками, как только вы кликните по ней!</p>
         <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
 
-        {(circles.length >= 12) &&
+        {(circles.length >= 2) &&
           <Gifts />
         }
       </div>
