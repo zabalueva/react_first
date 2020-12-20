@@ -8,6 +8,7 @@
     position: relative;
     grid-column: 2;
     justify-self: center;
+    z-index: 1;
 }
 
 .XMasTree:hover {

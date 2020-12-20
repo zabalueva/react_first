@@ -4,6 +4,7 @@
     grid-column: 2;
     position: relative;
     bottom: 110px;
+    z-index: 3;
 }
 
 .Gifts{
