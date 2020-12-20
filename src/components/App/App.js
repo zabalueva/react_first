@@ -5,47 +5,41 @@ import tree from './tree.svg';
 import Circle from '../Circle';
 import Gifts from '../Gifts';
 
-
 function App() {
   const [coordX, setX] = useState('');
   const [coordY, setY] = useState('');
   const [circles, setCircles] = useState([]);
-
-
+  
 
   function addCircle(e) {
     setX(e.pageX);
     setY(e.pageY);
     setCircles([...circles, { coordX: coordX, coordY: coordY, id: circles.length }]);
-    console.log(circles.length);
   }
 
 
-
+ 
 
   return (
     <div className="App">
       <div className="wrap">
 
-        <p className='description'>Вы можете нарядить ёлку, просто кликнув по ней!</p>
+      <p className='description'>Ёлка засветится огоньками, как только вы кликните по ней!</p>
         <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
-        
-        {(circles.length >= 2) &&
-        <Gifts />
-      }
+
+        {(circles.length >= 12) &&
+          <Gifts />
+        }
       </div>
 
       <div>{
         circles.map(({ coordX, coordY, id }) => {
           return <Circle
             key={id}
-            color={'blue'}
             position={{ top: coordY, left: coordX }}
           />
         })
       }</div>
-
-
 
     </div>
   );

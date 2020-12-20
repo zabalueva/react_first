@@ -11,7 +11,6 @@ import GiftFoodInfo from '../GiftFoodInfo';
 import GiftGitInfo from '../GiftGitInfo';
 import GiftFunInfo from '../GiftFunInfo';
 
-
 function Gifts() {
     const [firstGift, setFirstGift] = useState(false);
     const [secondGift, setSecondGift] = useState(false);
@@ -27,18 +26,18 @@ function Gifts() {
         setThirdGift(true);
     }
 
-    const Bounce = styled.div`animation: 6s ${keyframes`${bounce}`} infinite`;
-
+    const Jump = styled.div`animation: 6s ${keyframes`${bounce}`} infinite`;
+    
     return (
         <div className="wrapGifts">
 
-            <Bounce>
+            <Jump >
                 <div className="Gifts">
                     <img src={Gift1} alt="gift" title="Подарок GitHub" className="Gift" onClick={getFirstGift}></img>
                     <img src={Gift2} alt="gift" title="Подарок Food" className="Gift" onClick={getSecondGift}></img>
                     <img src={Gift3} alt="gift" title="Подарок Animation" className="Gift" onClick={getThirdGift}></img>
                 </div>
-            </Bounce>
+            </Jump >
 
             {firstGift &&
                 <GiftGitInfo />
@@ -49,7 +48,6 @@ function Gifts() {
             {thirdGift &&
                 <GiftFunInfo />
             }
-
         </div>
     );
 

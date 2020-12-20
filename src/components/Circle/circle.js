@@ -1,12 +1,18 @@
-import  './Circle.css';
+import './Circle.css';
 
 function Circle(props) {
-    let { color, position } = props;
+    const colorArray = ['#f44336', '#e91e63', '#9c27b0',
+    '#673ab7',   '#3f51b5',   '#2196f3', 
+'#03a9f4',   '#00bcd4',     '#CDDC39']
+
+    
+    const { position } = props;
     const style = {
-        backgroundColor: color,
+        backgroundColor: colorArray[Math.floor(Math.random() * colorArray.length)],
         ...position
     }
     
+
 
     return (
         <div className="circle" style={style}>       

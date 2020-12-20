@@ -1,5 +1,6 @@
 .wrapGifts {
     display: grid;
+    vertical-align: 50vh;
     grid-column: 2;
     position: relative;
     bottom: 110px;
@@ -16,7 +17,7 @@
 
 .Gift{
     width: 30%;
-    z-index: 2;
+    z-index: 1000;
 }
 
 .Gift:hover {

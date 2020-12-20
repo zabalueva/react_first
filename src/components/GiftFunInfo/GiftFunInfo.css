@@ -1,8 +1,4 @@
-.meal {
-    clip-path: circle();
-    width: 60vh;
-}
-
-.mealDescr {
-    
+.canvasConf {
+height: 100vh;
+inset: initial;
 }
