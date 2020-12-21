@@ -1,17 +1,15 @@
 .wrapGifts {
-    display: grid;
-    vertical-align: 50vh;
     grid-column: 2;
-    position: relative;
-    bottom: 110px;
     z-index: 3;
 }
 
 .Gifts{
     width: 100%;
-    display: flex;
+    display: flex;   
     flex-direction: row;
-    justify-content: center;   
+    justify-content: center; 
+    position: relative;
+    bottom: 20vh;  
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
 }

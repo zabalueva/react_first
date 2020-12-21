@@ -22,7 +22,7 @@ function GiftGitInfo() {
             .then(response => response.json())
             .then(githubUserData => new Promise((resolve, reject) => {
 
-                setName(/* githubUserData.name */login);
+                setName(githubUserData.login);
                 setAvatar(githubUserData.avatar_url);
 
                 let currentDate = new Date();
@@ -40,8 +40,8 @@ function GiftGitInfo() {
             {name &&
                 <div>
                     <p> Имя: {name} </p>
-                    {/* <p> Вы на github уже {days} дня! Это точно повод для праздника!</p>
-                    <img src={avatar} alt={name} className='avatar'></img> */}
+                    <p> Вы на github уже {days} дня! Это точно повод для праздника!</p>
+                    <img src={avatar} alt={name} className='avatar'></img>
                 </div>
             }
 
