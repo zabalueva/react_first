@@ -6,23 +6,15 @@ import Circle from '../Circle';
 import Gifts from '../Gifts';
 
 function App() {
-  const [coordX, setX] = useState('');
-  const [coordY, setY] = useState('');
   const [circles, setCircles] = useState([]);
 
-
   function addCircle(e) {
-    setX(e.pageX);
-    setY(e.pageY);
     setCircles(
       [...circles,
-      { coordX: coordX, coordY: coordY, id: circles.length }
+      { coordX: e.pageX, coordY: e.pageY, id: circles.length }
       ]
     );
   }
-
-
-
 
   return (
     <div className="App">
