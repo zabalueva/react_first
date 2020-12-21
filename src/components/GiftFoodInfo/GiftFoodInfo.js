@@ -19,6 +19,10 @@ function GiftFoodInfo() {
     useEffect(() => {
         giveData()
     }, [])
+    
+    useEffect(() => {
+        document.title = `A time of gifts!`
+    }, [])
 
     return (
             <div className="mealDescr">{

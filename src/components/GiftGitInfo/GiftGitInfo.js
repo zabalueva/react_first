@@ -21,7 +21,7 @@ function GiftGitInfo() {
             .then(response => response.json())
             .then(githubUserData => new Promise((resolve, reject) => {
 
-                setName(githubUserData.login);
+                setName(githubUserData.name);
                 setAvatar(githubUserData.avatar_url);
 
                 let currentDate = new Date();
