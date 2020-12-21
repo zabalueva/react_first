@@ -10,7 +10,6 @@ function GiftGitInfo() {
 
     function handleInput(e) {
         setLogin(e.target.value);
-        console.log(login)
     }
 
     useEffect(() => {
@@ -34,6 +33,7 @@ function GiftGitInfo() {
 
     return (
         <div className="GiftDescr">
+            <p> Вы выбрали подарок, использующий API GitHub. Введите свой логин </p>
             <input value={login} onChange={handleInput} />
             <button onClick={giveData}>Узнать повод для праздника!</button>
 

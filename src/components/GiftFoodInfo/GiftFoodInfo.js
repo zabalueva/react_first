@@ -24,7 +24,7 @@ function GiftFoodInfo() {
             <div className="mealDescr">{
                 meal &&
                 <div className="GiftDescr">
-                    <p> Ваш подарок - идея для новогоднего стола! {meal} </p>
+                    <p> Ваш подарок - идея для праздничного блюда! Попробуйте {meal} </p>
                     <img src={imgMeal} alt={meal} className='meal'></img>
                 </div>
             }</div>       
