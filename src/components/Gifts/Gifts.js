@@ -27,7 +27,7 @@ function Gifts() {
     }
 
     const Jump = styled.div`animation: 6s ${keyframes`${bounce}`} infinite`;
-    
+
     return (
         <div className="wrapGifts">
 

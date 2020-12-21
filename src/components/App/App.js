@@ -13,15 +13,15 @@ function App() {
       [...circles,
       { coordX: e.pageX, coordY: e.pageY, id: circles.length }
       ]
-    );
-  }
+    )  
+  } 
 
   return (
     <div className="App">
       <div className="wrap">
 
         <p className='description'>Ёлка засветится огоньками, как только вы кликните по ней!</p>
-        <p className='description'> За 10 огоньков можно выбрать подарок!</p>
+        <p className='description'> 10 огоньков и появятся подарки!</p>
         <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
 
         {(circles.length >= 10) &&
