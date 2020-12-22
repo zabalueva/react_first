@@ -21,7 +21,7 @@ function GiftFoodInfo() {
     }, [])
     
     useEffect(() => {
-        document.title = `A time of gifts!`
+        setTimeout(() => document.title = `A time of gifts!`, 3000);
     }, [])
 
     return (

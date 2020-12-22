@@ -5,7 +5,7 @@ import './GiftFunInfo.css';
 
 function GiftFunInfo() {
     useEffect(() => {
-        document.title = `A time of gifts!`
+        setTimeout(() => document.title = `A time of gifts!`, 3000);
     }, [])
 
     const { width, height } = useWindowSize();
