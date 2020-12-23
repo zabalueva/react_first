@@ -33,7 +33,6 @@ function GiftGitInfo() {
     }
 
 
-
     return (
         <div className="GiftDescr">
             <p> Вы выбрали подарок, использующий API GitHub. Введите свой логин </p>
