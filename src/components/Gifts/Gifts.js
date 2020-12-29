@@ -7,9 +7,9 @@ import Gift2 from '../Gifts/Gift2.svg';
 import Gift3 from '../Gifts/Gift3.svg';
 import './Gifts.css';
 
-import GiftFoodInfo from '../GiftFoodInfo';
-import GiftGitInfo from '../GiftGitInfo';
-import GiftFunInfo from '../GiftFunInfo';
+import GiftFoodInfo from './GiftFoodInfo';
+import GiftGitInfo from './GiftGitInfo';
+import GiftFunInfo from './GiftFunInfo';
 
 function Gifts() {
     const [firstGift, setFirstGift] = useState(false);
