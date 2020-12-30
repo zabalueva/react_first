@@ -4,16 +4,22 @@ html {
 }
 
 .wrap {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;;
+}
+
+.wrap_start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .XMasTree {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     height: 70vh;
     position: relative;
-    grid-column: 2;
-    justify-self: center;
+    justify-content: center;
     z-index: 1;
 
     &:hover {
@@ -21,11 +27,9 @@ html {
     }
 }
 
-
-
 .description{
-    grid-column: 2;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
 }

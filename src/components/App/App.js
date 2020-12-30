@@ -21,17 +21,19 @@ function App() {
     <div className="App">
       <div className="wrap">
 
-        <p className='description'>Ёлка засветится огоньками, как только вы кликните по ней!</p>
-        <p className='description'> 10 огоньков и появятся подарки!</p>
+        <div className="wrap_start">
+          <p className='description'>Ёлка засветится огоньками, как только вы кликните по ней!</p>
+          <p className='description'> 10 огоньков и появятся подарки!</p>
 
-        <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
+          <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
 
-        {(circles.length >= 2) &&
-          <Gifts />
-        }
+          {(circles.length >= 2) &&
+            <Gifts />
+          }
+        </div>
       </div>
 
-      <div>{
+      <div className="circle_array">{
         circles.map(({ coordX, coordY, id }) => {
           return <Circle
             key={id}
