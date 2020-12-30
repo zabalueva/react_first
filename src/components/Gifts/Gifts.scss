@@ -3,7 +3,7 @@
     z-index: 3;
 }
 
-.Gifts{
+.Gifts {
     width: 100%;
     display: flex;   
     flex-direction: row;
@@ -17,11 +17,14 @@
 .Gift{
     width: 40%;
     z-index: 1000;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.Gift:hover {
-    cursor: pointer;
-}
+
+
 
 .GiftDescr{
     font-family: Georgia, 'Times New Roman', Times, serif;

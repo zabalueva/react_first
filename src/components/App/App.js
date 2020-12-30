@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './App.scss';
 
 import tree from './tree.svg';
 import Circle from '../Circle';
@@ -26,7 +26,7 @@ function App() {
 
         <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
 
-        {(circles.length >= 10) &&
+        {(circles.length >= 2) &&
           <Gifts />
         }
       </div>

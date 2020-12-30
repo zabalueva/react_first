@@ -15,11 +15,13 @@ html {
     grid-column: 2;
     justify-self: center;
     z-index: 1;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.XMasTree:hover {
-    cursor: pointer;
-}
+
 
 .description{
     grid-column: 2;

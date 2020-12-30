@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './GiftFoodInfo.css';
+import './GiftFoodInfo.scss';
 
 function GiftFoodInfo() {
     const [meal, setMeal] = useState('');

@@ -1,4 +1,4 @@
-import './Circle.css';
+import './Circle.scss';
 
 function Circle(props) {
     const { position } = props;
