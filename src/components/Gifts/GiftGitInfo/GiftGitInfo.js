@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './GiftGitInfo.scss';
+import './GiftGitInfo.module.scss';
 
 function GiftGitInfo() {
     const [login, setLogin] = useState('');

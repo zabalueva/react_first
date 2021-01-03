@@ -1,4 +1,4 @@
-import './Circle.scss';
+import styles from './Circle.module.scss';
 
 function Circle(props) {
     const { position } = props;
@@ -11,7 +11,7 @@ function Circle(props) {
     }
     
     return (
-        <div className="circle" style={style}>       
+        <div className={styles.circle} style={style}>       
         </div>
         
     )

@@ -5,7 +5,7 @@ import { bounce } from 'react-animations';
 import Gift1 from '../Gifts/Gift1.svg';
 import Gift2 from '../Gifts/Gift2.svg';
 import Gift3 from '../Gifts/Gift3.svg';
-import './Gifts.scss';
+import './Gifts.module.scss';
 
 import GiftFoodInfo from './GiftFoodInfo';
 import GiftGitInfo from './GiftGitInfo';

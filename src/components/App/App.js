@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.scss';
+import styles from './App.module.scss';
 
 import tree from './tree.svg';
 import Circle from '../Circle';
@@ -19,28 +19,30 @@ function App() {
 
   return (
     <div className="App">
-      <div className="wrap">
+      <div className={styles.wrap}>
 
-        <div className="wrap_start">
-          <p className='description'>Ёлка засветится огоньками, как только вы кликните по ней!</p>
-          <p className='description'> 10 огоньков и появятся подарки!</p>
+        <div className={styles.wrap_start}>
+          <p className={styles.description}>Ёлка засветится огоньками, как только вы кликните по ней!</p>
+          <p className={styles.description}> 10 огоньков и появятся подарки!</p>
 
-          <img src={tree} alt="XMastree" className="XMasTree" onClick={addCircle}></img>
+          <img src={tree} alt="XMastree" className={styles.XMasTree} onClick={addCircle}></img>
 
-          {(circles.length >= 2) &&
-            <Gifts />
-          }
+        
         </div>
       </div>
 
-      <div className="circle_array">{
+      <div className={styles.circle_array}>{
         circles.map(({ coordX, coordY, id }) => {
           return <Circle
             key={id}
             position={{ top: coordY, left: coordX }}
           />
         })
-      }</div>
+      }
+      </div>
+      {(circles.length >= 2) &&
+            <Gifts />
+          }
 
     </div>
   );

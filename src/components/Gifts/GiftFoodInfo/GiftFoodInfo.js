@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './GiftFoodInfo.scss';
+import './GiftFoodInfo.module.scss';
 
 function GiftFoodInfo() {
     const [meal, setMeal] = useState('');
@@ -25,10 +25,10 @@ function GiftFoodInfo() {
     }, [])
 
     return (
-            <div className="mealDescr">{
+            <div className="GiftDescr">{
                 meal &&
-                <div className="GiftDescr">
-                    <p> Ваш подарок - идея для праздничного блюда! Попробуйте {meal} </p>
+                <div className="mealDescr">
+                    <p className="mealDescr1"> Ваш подарок - идея для праздничного блюда! Попробуйте {meal} </p>
                     <img src={imgMeal} alt={meal} className='meal'></img>
                 </div>
             }</div>       

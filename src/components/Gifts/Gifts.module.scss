@@ -1,9 +1,9 @@
-.wrapGifts {   
-    z-index: 3;
+.wrapGifts {  
+    position: relative; 
+    z-index: 4;
 }
 
 .Gifts {
-   /*  width: 100%; */
     display: flex;   
     flex-direction: row;
     justify-content: center; 
@@ -15,7 +15,6 @@
 
 .Gift{
     width: 30vh;
-    z-index: 1000;
 
     &:hover {
         cursor: pointer;
@@ -24,6 +23,9 @@
 
 
 .GiftDescr{
+    position: relative;
+    bottom: 100vh; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
 }
+

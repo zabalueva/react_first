@@ -1,3 +1,5 @@
+
+
 html {
     width: 100vw;
     overflow-x: hidden;
@@ -6,13 +8,14 @@ html {
 .wrap {
     display: flex;
     flex-direction: row;
-    justify-content: center;;
+    justify-content: center;
 }
 
 .wrap_start{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* overflow: visible; */
 }
 
 .XMasTree {
@@ -20,7 +23,6 @@ html {
     height: 70vh;
     position: relative;
     justify-content: center;
-    z-index: 1;
 
     &:hover {
         cursor: pointer;
