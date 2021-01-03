@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import useWindowSize from 'react-use/lib/useWindowSize';
 import Confetti from 'react-confetti';
-import './GiftFunInfo.module.scss';
+import './GiftFunInfo.scss';
 
 function GiftFunInfo() {
     useEffect(() => {
