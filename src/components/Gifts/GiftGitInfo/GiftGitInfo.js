@@ -34,7 +34,7 @@ function GiftGitInfo() {
 
 
     return (
-        <div className="GiftDescr">
+        <div className="GiftDescr" id="git">
             <p> Вы выбрали подарок, использующий API GitHub. Введите свой логин </p>
             <input value={login} onChange={handleInput} />
             <button onClick={giveData}>Узнать повод для праздника!</button>

@@ -33,14 +33,18 @@ function Gifts() {
 
             <Jump >
                 <div className={styles.Gifts}>
-                    <img src={Gift1} alt="gift" title="Подарок GitHub" className={styles.Gift} onClick={getFirstGift}></img>
-                    <img src={Gift2} alt="gift" title="Подарок Food" className={styles.Gift} onClick={getSecondGift}></img>
+                    <a href="#git">
+                        <img src={Gift1} alt="gift" title="Подарок GitHub" className={styles.Gift} onClick={getFirstGift}></img>
+                    </a>
+                    <a href="#meal">
+                        <img src={Gift2} alt="gift" title="Подарок Food" className={styles.Gift} onClick={getSecondGift}></img>
+                    </a>
                     <img src={Gift3} alt="gift" title="Подарок Animation" className={styles.Gift} onClick={getThirdGift}></img>
                 </div>
             </Jump >
 
             {firstGift &&
-                <GiftGitInfo />
+                <GiftGitInfo/>
             }
             {secondGift &&
                 <GiftFoodInfo />

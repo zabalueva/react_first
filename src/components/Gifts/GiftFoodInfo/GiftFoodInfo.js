@@ -25,11 +25,11 @@ function GiftFoodInfo() {
     }, [])
 
     return (
-            <div className="GiftDescr">{
+            <div className="GiftDescr" id="meal">{
                 meal &&
-                <div className="mealDescr">
+                <div className="mealDescr" id="meal">
                     <p className="mealDescr1"> Ваш подарок - идея для праздничного блюда! Попробуйте {meal} </p>
-                    <img src={imgMeal} alt={meal} className='meal'></img>
+                    <img   src={imgMeal} alt={meal} className='meal'></img>
                 </div>
             }</div>       
     );
