@@ -15,16 +15,18 @@
 
 .Gift{
     width: 30vh;
+    transition: 1s;
 
     &:hover {
         cursor: pointer;
+        transform: scale(1.4);      
     }
 }
 
-.GiftDescr{
+/* .GiftDescr{
     position: relative;
     bottom: 100vh; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-}
+} */
 
