@@ -47,7 +47,7 @@ function Gifts() {
                 <GiftGitInfo/>
             }
             {secondGift &&
-                <GiftFoodInfo />
+                <GiftFoodInfo id="meal"/>
             }
             {thirdGift &&
                 <GiftFunInfo />

@@ -25,14 +25,18 @@ function GiftFoodInfo() {
     }, [])
 
     return (
-            <div className="GiftDescr" id="meal">{
-                meal &&
-                <div className="mealDescr" id="meal">
-                    <p className="mealDescr1"> Ваш подарок - идея для праздничного блюда! Попробуйте {meal} </p>
-                    <img   src={imgMeal} alt={meal} className='meal'></img>
+        <div className="GiftDescr" >
+            
+            { meal &&
+                <div className="mealDescr" >
+                    <p className="mealDescr1" id="meal"> Ваш подарок - идея для праздничного блюда! Попробуйте {meal} </p>
+                    <img src={imgMeal} alt={meal} className='meal' id="meal"></img>
                 </div>
-            }</div>       
-    );
+            }
+            <p id="meal"></p>
+        </div>   
+                
+        );
 }
 
 export default GiftFoodInfo;

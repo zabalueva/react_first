@@ -26,7 +26,7 @@ function App() {
           <p className={styles.description}> 10 огоньков и появятся подарки!</p>
           <img src={tree} alt="XMastree" className={styles.XMasTree} onClick={addCircle}></img>
         
-          {(circles.length >= 10) &&
+          {(circles.length >= 2) &&
             <Gifts />
           }        
         </div>
