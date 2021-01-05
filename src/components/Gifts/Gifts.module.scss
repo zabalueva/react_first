@@ -1,5 +1,5 @@
 .wrapGifts {  
-    /* position: relative;  */
+    /* position: relative; //ломает конфетти  */
     z-index: 4;
 }
 
@@ -20,7 +20,6 @@
         cursor: pointer;
     }
 }
-
 
 .GiftDescr{
     position: relative;

@@ -19,24 +19,23 @@ function GiftFoodInfo() {
     useEffect(() => {
         giveData()
     }, [])
-    
+
     useEffect(() => {
         setTimeout(() => document.title = `A time of gifts!`, 3000);
     }, [])
 
     return (
-        <div className="GiftDescr" >
-            
+        <div className="GiftDescrFood" >
             { meal &&
                 <div className="mealDescr" >
-                    <p className="mealDescr1" id="meal"> Ваш подарок - идея для праздничного блюда! Попробуйте {meal} </p>
-                    <img src={imgMeal} alt={meal} className='meal' id="meal"></img>
+                    <p className="mealDescr" > Ваш подарок - идея для праздничного блюда!</p>
+                    <p className="mealDescr" > Попробуйте {meal} </p>
+                    <img src={imgMeal} alt={meal} className='meal'></img>
                 </div>
             }
-            <p id="meal"></p>
-        </div>   
-                
-        );
+        </div>
+
+    );
 }
 
 export default GiftFoodInfo;
