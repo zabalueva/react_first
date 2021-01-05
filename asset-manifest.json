@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/react_first/static/css/main.95be070b.chunk.css",
-    "main.js": "/react_first/static/js/main.e65ef0eb.chunk.js",
-    "main.js.map": "/react_first/static/js/main.e65ef0eb.chunk.js.map",
-    "runtime-main.js": "/react_first/static/js/runtime-main.96cccccf.js",
-    "runtime-main.js.map": "/react_first/static/js/runtime-main.96cccccf.js.map",
-    "static/js/2.c38a4db3.chunk.js": "/react_first/static/js/2.c38a4db3.chunk.js",
-    "static/js/2.c38a4db3.chunk.js.map": "/react_first/static/js/2.c38a4db3.chunk.js.map",
-    "static/js/3.bd9ccc66.chunk.js": "/react_first/static/js/3.bd9ccc66.chunk.js",
-    "static/js/3.bd9ccc66.chunk.js.map": "/react_first/static/js/3.bd9ccc66.chunk.js.map",
+    "main.css": "/react_first/static/css/main.fac23d12.chunk.css",
+    "main.js": "/react_first/static/js/main.064fa1ea.chunk.js",
+    "main.js.map": "/react_first/static/js/main.064fa1ea.chunk.js.map",
+    "runtime-main.js": "/react_first/static/js/runtime-main.05994ccb.js",
+    "runtime-main.js.map": "/react_first/static/js/runtime-main.05994ccb.js.map",
+    "static/js/2.18ed2f0b.chunk.js": "/react_first/static/js/2.18ed2f0b.chunk.js",
+    "static/js/2.18ed2f0b.chunk.js.map": "/react_first/static/js/2.18ed2f0b.chunk.js.map",
+    "static/js/3.aea03fa7.chunk.js": "/react_first/static/js/3.aea03fa7.chunk.js",
+    "static/js/3.aea03fa7.chunk.js.map": "/react_first/static/js/3.aea03fa7.chunk.js.map",
     "index.html": "/react_first/index.html",
-    "static/css/main.95be070b.chunk.css.map": "/react_first/static/css/main.95be070b.chunk.css.map",
-    "static/js/2.c38a4db3.chunk.js.LICENSE.txt": "/react_first/static/js/2.c38a4db3.chunk.js.LICENSE.txt",
+    "static/css/main.fac23d12.chunk.css.map": "/react_first/static/css/main.fac23d12.chunk.css.map",
+    "static/js/2.18ed2f0b.chunk.js.LICENSE.txt": "/react_first/static/js/2.18ed2f0b.chunk.js.LICENSE.txt",
     "static/media/Gift1.4de2d7fc.svg": "/react_first/static/media/Gift1.4de2d7fc.svg",
     "static/media/Gift2.87d57f82.svg": "/react_first/static/media/Gift2.87d57f82.svg",
     "static/media/Gift3.fd92ab2c.svg": "/react_first/static/media/Gift3.fd92ab2c.svg",
     "static/media/tree.ab871074.svg": "/react_first/static/media/tree.ab871074.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.96cccccf.js",
-    "static/js/2.c38a4db3.chunk.js",
-    "static/css/main.95be070b.chunk.css",
-    "static/js/main.e65ef0eb.chunk.js"
+    "static/js/runtime-main.05994ccb.js",
+    "static/js/2.18ed2f0b.chunk.js",
+    "static/css/main.fac23d12.chunk.css",
+    "static/js/main.064fa1ea.chunk.js"
   ]
 }
