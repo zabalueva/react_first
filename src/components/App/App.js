@@ -23,7 +23,7 @@ function App() {
 
         <div className={styles.wrap_start}>
           <p className={styles.description}>Ёлка засветится огоньками, как только вы кликните по ней!</p>
-          <p className={styles.description}> 10 огоньков и появятся подарки!</p>
+          <p className={styles.description}> 10 огоньков - и появятся подарки!</p>
           <img src={tree} alt="XMastree" className={styles.XMasTree} onClick={addCircle}></img>
 
           {(circles.length >= 10) &&
@@ -42,7 +42,7 @@ function App() {
         })
       }
       </div>
-      
+
     </div>
   );
 }

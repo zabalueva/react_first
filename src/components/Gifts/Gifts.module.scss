@@ -1,25 +1,24 @@
-.wrapGifts {  
+.wrapGifts {
     /* position: relative; //ломает конфетти  */
     z-index: 4;
 }
 
 .Gifts {
-    display: flex;   
+    display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     position: relative;
-    bottom: 20vh;  
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    bottom: 20vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 600;
 }
 
-.Gift{
+.Gift {
     width: 30vh;
     transition: 1s;
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.4);      
+        transform: scale(1.4);
     }
 }
-

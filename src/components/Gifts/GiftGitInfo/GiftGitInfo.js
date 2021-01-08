@@ -50,7 +50,7 @@ function GiftGitInfo() {
                     <p> Вы на github уже {days}
 
                         {(+daysStr.match(/\d\b/g) === 1) ?
-                            <span> день</span> :
+                            <span> день </span> :
                             ((+daysStr.match(/\d\b/g) === 2) ||
                                 (+daysStr.match(/\d\b/g) === 3) ||
                                 (+daysStr.match(/\d\b/g) === 4)) ?

@@ -11,12 +11,11 @@ function GiftFunInfo() {
     const { width, height } = useWindowSize();
 
     return (
-            <Confetti
-                width={width}
-                height={height}
-            />
+        <Confetti
+            width={width}
+            height={height}
+        />
     )
 }
-
 
 export default GiftFunInfo;

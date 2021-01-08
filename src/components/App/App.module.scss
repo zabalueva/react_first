@@ -9,7 +9,7 @@ html {
     justify-content: center;
 }
 
-.wrap_start{
+.wrap_start {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,16 +20,15 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     height: 70vh;
     position: relative;
-    justify-content: center;
 
     &:hover {
         cursor: pointer;
     }
 }
 
-.description{
+.description {
     display: flex;
     justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 600;
 }
