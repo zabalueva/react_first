@@ -21,8 +21,7 @@ function GiftGitInfo() {
     function giveData() {
         fetch(`https://api.github.com/users/${login}`)
             .then(response => response.json())
-            .then(githubUserData => new Promise((resolve, reject) => {
-
+            .then(githubUserData =>  {
                 setName(githubUserData.name);
                 setAvatar(githubUserData.avatar_url);
 
@@ -31,7 +30,7 @@ function GiftGitInfo() {
                 const calc = ((currentDate - formatDate) / 1000 / 60 / 60 / 24);
                 setDays(calc.toFixed(0));
             }
-            ))
+            )
     }
 
     useEffect(() => {
@@ -40,7 +39,8 @@ function GiftGitInfo() {
 
     return (
         <div className="GiftDescrGit">
-            <p> Вы выбрали подарок, использующий API GitHub. Введите свой логин </p>
+            <p> Вы выбрали подарок, использующий API GitHub.  </p>
+            <p> Введите свой логин: </p>
             <input value={login} onChange={handleInput} onKeyPress={handleKeyPress} type="text" />
             <button onClick={giveData}>Узнать повод для праздника!</button>
 
